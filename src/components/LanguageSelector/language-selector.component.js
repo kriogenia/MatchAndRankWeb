@@ -40,7 +40,7 @@ const LanguageSelectorComponent = () => {
 
 	return (
 		<div>
-			<Button onClick={handleToggle} ref={anchorRef}>
+			<Button color="inherit" onClick={handleToggle} ref={anchorRef}>
 				{languages[selectedIndex]}
 			</Button>
 			<Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>

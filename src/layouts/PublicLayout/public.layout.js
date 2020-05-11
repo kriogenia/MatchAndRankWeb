@@ -9,14 +9,14 @@ import {ToolBar} from "../../components";
  */
 const PublicLayout = (props) => {
 
-	const { component: Component, ...rest } = props;
+	const { component: Component, toggleLightMode, ...rest } = props;
 
 	return (
 		<Route
 			{...rest}
 			component={({ history, location, match }) => (
 				<Grid container direction="column">
-					<ToolBar/>
+					<ToolBar toggleLightMode={toggleLightMode}/>
 					<Component {...{ history, location, match }} />
 					{/*<Footer/>*/}
 				</Grid>
