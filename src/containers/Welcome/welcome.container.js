@@ -7,7 +7,7 @@ const WelcomeContainer = () => {
 
 	return (
 		<h1>{t("welcome")}</h1>
-	)
+	);
 };
 
 export default WelcomeContainer;
