@@ -1,6 +1,7 @@
 import React from "react";
-import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
 import i18n from "../../i18n";
+import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
+import {errorToaster} from "../index";
 import {useStyles} from "./styles";
 
 const languages = ["en", "es", "gl"];
@@ -22,7 +23,7 @@ const LanguageSelectorComponent = () => {
 		i18n.changeLanguage(languages[index]).then(() => {
 			setLoaded(true);
 		}).catch(() => {
-			// errorToaster
+			errorToaster("There was an error loading this language.");
 			setLoaded(true);
 		});
 	};
