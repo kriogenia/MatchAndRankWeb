@@ -3,6 +3,7 @@ import i18n from "../../i18n";
 import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
 import {errorToaster} from "../index";
 import {useStyles} from "./styles";
+import {useTranslation} from "react-i18next";
 
 const languages = ["en", "es", "gl"];
 
@@ -12,8 +13,8 @@ const LanguageSelectorComponent = () => {
 	const [loaded, setLoaded] = React.useState(true);
 	const [selectedIndex, setSelectedIndex] = React.useState(1);
 
+	const {t} = useTranslation();
 	const anchorRef = React.useRef(null);
-
 	const classes = useStyles();
 
 	const handleMenuItemClick = (event, index) => {
@@ -23,7 +24,7 @@ const LanguageSelectorComponent = () => {
 		i18n.changeLanguage(languages[index]).then(() => {
 			setLoaded(true);
 		}).catch(() => {
-			errorToaster("There was an error loading this language.");
+			errorToaster(t("error:languagechange"));
 			setLoaded(true);
 		});
 	};
