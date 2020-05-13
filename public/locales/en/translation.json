@@ -2,7 +2,10 @@
   "alert": {
     "confirm": "Are you sure?"
   },
-  "no": "no",
-  "welcome": "Welcome to Match'n'Rank",
-  "yes": "Yes"
+  "option": {
+    "add": "Add",
+    "clear": "Clear",
+    "no": "no",
+    "yes": "Yes"
+  }
 }

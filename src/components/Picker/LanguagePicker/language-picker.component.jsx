@@ -1,13 +1,13 @@
 import React from "react";
-import i18n from "../../i18n";
+import i18n from "../../../i18n";
 import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
-import {errorToaster} from "../index";
+import {errorToaster} from "../../index";
 import {useTranslation} from "react-i18next";
-import {useStyles} from "./language-selector.styles";
+import {useStyles} from "./language-picker.styles";
 
 const languages = ["en", "es", "gl"];
 
-const LanguageSelectorComponent = () => {
+const LanguagePickerComponent = () => {
 
 	const [open, setOpen] = React.useState(false);
 	const [loaded, setLoaded] = React.useState(true);
@@ -79,4 +79,4 @@ const LanguageSelectorComponent = () => {
 
 };
 
-export default LanguageSelectorComponent;
+export default LanguagePickerComponent;

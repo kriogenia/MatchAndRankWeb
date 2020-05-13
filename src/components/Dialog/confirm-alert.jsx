@@ -24,11 +24,11 @@ const AlertDialog = ({ text, onClose, open }) => {
 				</DialogContentText>
 			</DialogContent>
 			<DialogActions>
-				<Button variant="outlined" onClick={() => handleClose(false)} color="primary">
-					{t("yes")}
+				<Button variant="outlined" onClick={() => handleClose(true)} color="primary">
+					{t("option.yes")}
 				</Button>
-				<Button variant="outlined" onClick={() => handleClose(true)} color="secondary" autoFocus>
-					{t("no")}
+				<Button variant="outlined" onClick={() => handleClose(false)} color="secondary" autoFocus>
+					{t("option.no")}
 				</Button>
 			</DialogActions>
 		</Dialog>

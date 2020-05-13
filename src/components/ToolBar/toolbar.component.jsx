@@ -1,7 +1,7 @@
 import React from "react";
 import {AppBar, Button, Toolbar, Typography} from "@material-ui/core";
 import Brightness4SharpIcon from '@material-ui/icons/Brightness4Sharp';
-import {LanguageSelector} from "../";
+import {LanguagePicker} from "../";
 import {useStyles} from "./toolbar.styles";
 
 const ToolbarComponent = ({toggleLightMode}) => {
@@ -17,7 +17,7 @@ const ToolbarComponent = ({toggleLightMode}) => {
 				<Button color="inherit" onClick={toggleLightMode}>
 					<Brightness4SharpIcon/>
 				</Button>
-				<LanguageSelector/>
+				<LanguagePicker/>
 			</Toolbar>
 		</AppBar>
 	);

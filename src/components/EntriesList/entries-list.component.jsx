@@ -14,14 +14,17 @@ import {Add, Clear, Delete} from "@material-ui/icons";
 import { useTheme } from '@material-ui/core/styles';
 import {useStyles} from "./entries-list.style";
 import {AlertDialog} from "../index";
+import {useTranslation} from "react-i18next";
 
 const EntriesListComponent = ({ list, setList } ) => {
 
 	const [input, setInput] = React.useState("");
 	const [alertOpen, setAlertOpen] = React.useState(false);
 
+	const {t} = useTranslation();
 	const mobile = useMediaQuery(useTheme().breakpoints.up("sm"));
 	const classes = useStyles();
+
 	let counter = 0;
 
 	const handleAdd = (e) => {
@@ -54,11 +57,11 @@ const EntriesListComponent = ({ list, setList } ) => {
 					className={classes.textfield}/>
 				<Button color="primary" variant="contained" type={"submit"}>
 					<Add/>
-					{mobile ? "Add" : null}
+					{mobile ? t("option.add") : null}
 				</Button>
 				<Button color="secondary" variant="contained" onClick={invokeClear} disabled={list.length === 0}>
 					<Clear/>
-					{mobile ? "Clear" : null}
+					{mobile ? t("option.clear") : null}
 				</Button>
 			</form>
 			<List>
