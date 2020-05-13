@@ -15,7 +15,7 @@ const PublicLayout = (props) => {
 		<Route
 			{...rest}
 			component={({ history, location, match }) => (
-				<Grid container direction="column">
+				<Grid container direction="column" spacing={3}>
 					<ToolBar toggleLightMode={toggleLightMode}/>
 					<Component {...{ history, location, match }} />
 					{/*<Footer/>*/}

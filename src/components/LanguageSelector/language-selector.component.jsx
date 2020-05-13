@@ -2,8 +2,8 @@ import React from "react";
 import i18n from "../../i18n";
 import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
 import {errorToaster} from "../index";
-import {useStyles} from "./styles";
 import {useTranslation} from "react-i18next";
+import {useStyles} from "./language-selector.styles";
 
 const languages = ["en", "es", "gl"];
 

@@ -1,5 +1,6 @@
+import EntriesList from "./EntriesList";
 import LanguageSelector from "./LanguageSelector";
-import {errorToaster} from "./Toaster";
+import {errorToaster, successToaster} from "./Toaster";
 import ToolBar from "./ToolBar";
 
-export {LanguageSelector, errorToaster, ToolBar};
+export {EntriesList, LanguageSelector, errorToaster, successToaster, ToolBar};
