@@ -1,3 +1,8 @@
 {
-  "welcome": "Welcome to Match'n'Rank"
+  "alert": {
+    "confirm": "Are you sure?"
+  },
+  "no": "no",
+  "welcome": "Welcome to Match'n'Rank",
+  "yes": "Yes"
 }
