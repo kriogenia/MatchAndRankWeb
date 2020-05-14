@@ -1,3 +1,3 @@
-import Welcome from "./Welcome";
+import Start from "./Start/start.container";
 
-export {Welcome};
+export {Start};

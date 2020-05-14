@@ -13,7 +13,7 @@ const SystemPicker = ({setSystem}) => {
 	const {t} = useTranslation();
 
 	useEffect(() => {
-		setSystem("generateSystem");
+		setSystem(`${selected === "standard" ? "s" : "f"}${checked? "d": ""}`);
 	}, [selected, checked, setSystem]);
 
 	const handleCheck = () => {

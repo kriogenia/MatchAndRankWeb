@@ -1,3 +1,4 @@
-import setLightMode from "./light-mode.hook";
+import {errorToaster, successToaster} from "./Toaster/toaster.function";
+import setLightMode from "./LightMode/light-mode.hook";
 
-export {setLightMode};
+export {errorToaster, successToaster, setLightMode};

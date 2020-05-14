@@ -2,7 +2,7 @@ import React from "react";
 import {Button, Grid } from "@material-ui/core";
 import {ClearRounded, DescriptionRounded, ListRounded} from "@material-ui/icons";
 import {useTranslation} from "react-i18next";
-import {AlertDialog} from "../../index";
+import {ConfirmDialog} from "../../index";
 import {useStyles} from "./load-picker.styles";
 
 const LoadPicker = ({ list, setList }) => {
@@ -29,7 +29,7 @@ const LoadPicker = ({ list, setList }) => {
 
 	return (
 		<div className={classes.marginTop}>
-			<AlertDialog open={alertOpen} onClose={handleClear}/>
+			<ConfirmDialog open={alertOpen} onClose={handleClear}/>
 			<Grid container spacing={1} >
 				{buttons.map((b) =>
 					<Grid item xs container justify={"center"} key={b.text}>

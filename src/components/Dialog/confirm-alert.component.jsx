@@ -2,7 +2,7 @@ import React from "react";
 import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
 
-const AlertDialog = ({ text, onClose, open }) => {
+const ConfirmDialog = ({ text, onClose, open }) => {
 
 	const {t} = useTranslation();
 
@@ -24,10 +24,10 @@ const AlertDialog = ({ text, onClose, open }) => {
 				</DialogContentText>
 			</DialogContent>
 			<DialogActions>
-				<Button variant="outlined" onClick={() => handleClose(true)} color="primary">
+				<Button onClick={() => handleClose(true)} color="secondary">
 					{t("option.yes")}
 				</Button>
-				<Button variant="outlined" onClick={() => handleClose(false)} color="secondary" autoFocus>
+				<Button onClick={() => handleClose(false)} color="secondary" autoFocus>
 					{t("option.no")}
 				</Button>
 			</DialogActions>
@@ -35,4 +35,4 @@ const AlertDialog = ({ text, onClose, open }) => {
 	);
 };
 
-export default AlertDialog;
+export default ConfirmDialog;

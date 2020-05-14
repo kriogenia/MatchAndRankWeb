@@ -1,5 +1,5 @@
 import { useState } from "react";
-import themeObject from "../theme";
+import themeObject from "../../theme";
 
 const LightModeHook = () => {
 

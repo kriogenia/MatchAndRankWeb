@@ -2,7 +2,7 @@ import {makeStyles} from "@material-ui/core";
 
 export const useStyles = makeStyles(() => ({
 	paper: {
-		margin: "20px 0",
+		margin: "10px 0",
 		padding: 20
 	},
 	form: {

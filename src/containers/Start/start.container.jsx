@@ -1,19 +1,21 @@
 import React, {useEffect, useState} from "react";
 import {Grid} from "@material-ui/core";
-import {EntriesList, LoadPicker, SystemPicker} from "../../components";
+import {EntriesList, LoadPicker, StartButton, SystemPicker} from "../../components";
 
 let backuplist = [];
+let backupsystem = "s";
 
-const WelcomeContainer = () => {
+const StartContainer = () => {
 
 	const [list, setList] = useState(backuplist);
-	const [system, setSystem] = useState();
+	const [system, setSystem] = useState(backupsystem);
 
 	console.log(system);
 
 	useEffect(() => {
 		backuplist = [...list];
-	}, [list]);
+		backupsystem = system;
+	}, [list, system]);
 
 	return (
 		<Grid item container direction={"row"}>
@@ -22,11 +24,11 @@ const WelcomeContainer = () => {
 				<LoadPicker list={list} setList={setList}/>
 				<EntriesList list={list} setList={setList}/>
 				<SystemPicker setSystem={setSystem}/>
-				{/* Botón de next */}
+				<StartButton list={list} systemCode={system}/>
 			</Grid>
 			<Grid item md={12} lg={4}/>
 		</Grid>
 	);
 };
 
-export default WelcomeContainer;
+export default StartContainer;

@@ -1,7 +1,7 @@
 import React from "react";
 import i18n from "../../../i18n";
 import {Button, ClickAwayListener, Grow, MenuList, MenuItem, Paper, Popper} from "@material-ui/core";
-import {errorToaster} from "../../index";
+import {errorToaster} from "../../../hooks";
 import {useTranslation} from "react-i18next";
 import {useStyles} from "./language-picker.styles";
 
@@ -24,7 +24,7 @@ const LanguagePickerComponent = () => {
 		i18n.changeLanguage(languages[index]).then(() => {
 			setLoaded(true);
 		}).catch(() => {
-			errorToaster(t("error:languagechange"));
+			errorToaster(t("error:language_change"));
 			setLoaded(true);
 		});
 	};

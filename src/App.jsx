@@ -9,7 +9,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 const App = () => {
 
 	const [theme, toggleMode] = setLightMode();
-    // @ts-ignore
 	const themeConfig = createMuiTheme(theme);
 
 	return (

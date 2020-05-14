@@ -1,6 +1,8 @@
 {
   "alert": {
-    "confirm": "Are you sure?"
+    "confirm": "Are you sure?",
+    "expected_matches": "Expected matches",
+    "min_entries": "You need a minimum of three entries to start"
   },
   "option": {
     "add": "Add",
@@ -10,6 +12,7 @@
     "import": "Import (TBI)",
     "no": "no",
     "standard": "Standard",
+    "start": "Start",
     "templates": "Templates (TBI)",
     "yes": "Yes"
   }
