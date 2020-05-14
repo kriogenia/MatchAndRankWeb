@@ -1,37 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Grid} from "@material-ui/core";
-import {EntriesList} from "../../components";
+import {EntriesList, LoadPicker, SystemPicker} from "../../components";
 
-let list = [];
+let backuplist = [];
 
-class WelcomeContainer extends React.Component {
+const WelcomeContainer = () => {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			list: [...list]
-		};
-	};
+	const [list, setList] = useState(backuplist);
+	const [system, setSystem] = useState();
 
-	setList = (l) => {
-		list = [...l];
-		this.setState({list: list});
-	};
+	console.log(system);
 
-	render() {
-		return (
-			<Grid item container direction={"row"}>
-				<Grid item md={12} lg={4}/>
-				<Grid item xs={12} lg={4}>
-					{/* Botón de subir lista / Botón de cargar template */}
-					<EntriesList list={list} setList={this.setList}/>
-					{/* Opciones de enfrentamiento */}
-					{/* Botón de next */}
-				</Grid>
-				<Grid item md={12} lg={4}/>
+	useEffect(() => {
+		backuplist = [...list];
+	}, [list]);
+
+	return (
+		<Grid item container direction={"row"}>
+			<Grid item md={12} lg={4}/>
+			<Grid item xs={12} lg={4}>
+				<LoadPicker list={list} setList={setList}/>
+				<EntriesList list={list} setList={setList}/>
+				<SystemPicker setSystem={setSystem}/>
+				{/* Botón de next */}
 			</Grid>
-		);
-	}
-}
+			<Grid item md={12} lg={4}/>
+		</Grid>
+	);
+};
 
 export default WelcomeContainer;

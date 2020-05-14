@@ -10,16 +10,14 @@ import {
 	useMediaQuery,
 	TextField
 } from "@material-ui/core";
-import {Add, Clear, Delete} from "@material-ui/icons";
+import {AddRounded, Delete} from "@material-ui/icons";
 import { useTheme } from '@material-ui/core/styles';
 import {useStyles} from "./entries-list.style";
-import {AlertDialog} from "../index";
 import {useTranslation} from "react-i18next";
 
-const EntriesListComponent = ({ list, setList } ) => {
+const EntriesListComponent = ({ list, setList }) => {
 
 	const [input, setInput] = React.useState("");
-	const [alertOpen, setAlertOpen] = React.useState(false);
 
 	const {t} = useTranslation();
 	const mobile = useMediaQuery(useTheme().breakpoints.up("sm"));
@@ -36,32 +34,18 @@ const EntriesListComponent = ({ list, setList } ) => {
 		}
 	};
 
-	const handleClear = (answer) => {
-		if (answer) { setList([]) }
-		setAlertOpen(false);
-	};
-
 	const handleChange = ({ target: { value } }) => {setInput(value)};
 
 	const handleDelete = (id) => setList((list) => list.filter((ex) => ex.id !== id));
 
-	const invokeClear = () => {
-		setAlertOpen(true);
-	};
-
 	return (
 		<Paper className={classes.paper}>
-			<AlertDialog open={alertOpen} onClose={handleClear}/>
 			<form onSubmit={handleAdd} className={classes.form}>
 				<TextField name="input" label="Add" value={input} onChange={handleChange} margin="normal"
 					className={classes.textfield}/>
 				<Button color="primary" variant="contained" type={"submit"}>
-					<Add/>
+					<AddRounded/>
 					{mobile ? t("option.add") : null}
-				</Button>
-				<Button color="secondary" variant="contained" onClick={invokeClear} disabled={list.length === 0}>
-					<Clear/>
-					{mobile ? t("option.clear") : null}
 				</Button>
 			</form>
 			<List>

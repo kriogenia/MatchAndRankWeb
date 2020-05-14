@@ -2,13 +2,13 @@ import {makeStyles} from "@material-ui/core";
 
 export const useStyles = makeStyles(() => ({
 	paper: {
-		margin: 20,
+		margin: "20px 0",
 		padding: 20
 	},
 	form: {
-		display: 'flex',
-		alignItems: 'baseline',
-		justifyContent: 'space-evenly'
+		display: "flex",
+		alignItems: "baseline",
+		justifyContent: "space-evenly"
 	},
 	textfield: {
 		width: "75%"

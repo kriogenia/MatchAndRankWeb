@@ -4,8 +4,13 @@
   },
   "option": {
     "add": "Add",
+    "draw": "Allow draws (TBI)",
     "clear": "Clear",
+    "fast": "Fast (TBI)",
+    "import": "Import (TBI)",
     "no": "no",
+    "standard": "Standard",
+    "templates": "Templates (TBI)",
     "yes": "Yes"
   }
 }
