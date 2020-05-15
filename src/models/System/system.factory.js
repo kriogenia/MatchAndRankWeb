@@ -1,7 +1,7 @@
-import StandardSystem from "./standard.system";
+import Free4AllSystem from "./free4AllSystem";
 
 const systemFactory = (code, list) => {
-	if (code === "s") { return new StandardSystem(list); }
+	if (code === "f") { return new Free4AllSystem(list); }
 	return null;
 };
 

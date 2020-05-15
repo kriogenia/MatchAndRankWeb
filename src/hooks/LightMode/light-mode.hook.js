@@ -18,7 +18,7 @@ const LightModeHook = () => {
 		setTheme(updatedTheme);
 	};
 
-	return [theme, toggleMode]
+	return [theme, toggleMode];
 
 };
 

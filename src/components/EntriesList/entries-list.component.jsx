@@ -11,7 +11,7 @@ import {
 	TextField
 } from "@material-ui/core";
 import {AddRounded, Delete} from "@material-ui/icons";
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from "@material-ui/core/styles";
 import {useStyles} from "./entries-list.style";
 import {useTranslation} from "react-i18next";
 
@@ -34,7 +34,7 @@ const EntriesListComponent = ({ list, setList }) => {
 		}
 	};
 
-	const handleChange = ({ target: { value } }) => {setInput(value)};
+	const handleChange = ({ target: { value } }) => { setInput(value); };
 
 	const handleDelete = (id) => setList((list) => list.filter((ex) => ex.id !== id));
 

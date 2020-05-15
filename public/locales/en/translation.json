@@ -8,12 +8,18 @@
     "add": "Add",
     "draw": "Allow draws (TBI)",
     "clear": "Clear",
-    "fast": "Fast (TBI)",
-    "import": "Import (TBI)",
+    "quick": "Quick (TBI)",
+    "free4all": "Free4All",
+    "import": "Import",
     "no": "no",
-    "standard": "Standard",
     "start": "Start",
-    "templates": "Templates (TBI)",
+    "templates": "Templates",
     "yes": "Yes"
+  },
+  "tooltip": {
+    "clear": "Clears the whole list",
+    "import": "This feature is not yet implemented",
+    "light_mode": "Toggle dark/light mode",
+    "templates": "This feature is not yet implemented"
   }
 }

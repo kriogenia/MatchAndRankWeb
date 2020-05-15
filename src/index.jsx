@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import {ToastContainer} from "react-toastify";
-import App from './App';
-import 'typeface-roboto';
-import './i18n';
+import App from "./App";
+import "typeface-roboto";
+import "./i18n";
 import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.render(
@@ -21,5 +21,5 @@ ReactDOM.render(
 			pauseOnHover
 		/>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

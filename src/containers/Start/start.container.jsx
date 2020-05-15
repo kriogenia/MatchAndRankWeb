@@ -10,8 +10,6 @@ const StartContainer = () => {
 	const [list, setList] = useState(backuplist);
 	const [system, setSystem] = useState(backupsystem);
 
-	console.log(system);
-
 	useEffect(() => {
 		backuplist = [...list];
 		backupsystem = system;

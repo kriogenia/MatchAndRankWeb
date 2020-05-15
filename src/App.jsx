@@ -4,7 +4,7 @@ import {HashLoader} from "react-spinners";
 import {createMuiTheme, MuiThemeProvider} from "@material-ui/core";
 import {setLightMode} from "./hooks";
 import Routes from "./routes";
-import CssBaseline from '@material-ui/core/CssBaseline';
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 const App = () => {
 

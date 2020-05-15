@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Button, FormControlLabel, Grid, Paper, Switch} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
 
-let backupSelected = "standard";
+let backupSelected = "free4all";
 let backupChecked = false;
 
 const SystemPicker = ({setSystem}) => {
@@ -13,7 +13,7 @@ const SystemPicker = ({setSystem}) => {
 	const {t} = useTranslation();
 
 	useEffect(() => {
-		setSystem(`${selected === "standard" ? "s" : "f"}${checked? "d": ""}`);
+		setSystem(`${selected === "free4all" ? "f" : "q"}${checked? "d": ""}`);
 	}, [selected, checked, setSystem]);
 
 	const handleCheck = () => {
@@ -26,7 +26,7 @@ const SystemPicker = ({setSystem}) => {
 		setSelected(backupSelected);
 	};
 
-	const options = ["standard", "fast"];
+	const options = ["free4all", "quick"];
 
 	return (
 		<Paper>

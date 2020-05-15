@@ -1,14 +1,10 @@
 import {Entry} from "../";
 
-export default class StandardSystem {
+export default class Free4AllSystem {
 
 	constructor(list) {
 		this.entries = list.map((obj) => new Entry(obj.entry));
 		this.candidates = [...this.entries];
-	}
-
-	start() {
-		this.nextRound();
 	}
 
 	nextRound() {
@@ -28,7 +24,7 @@ export default class StandardSystem {
 			this.candidates.splice(index, 1);
 			a.clashed.push(b.name);
 			b.clashed.push(a.name);
-			return { a: a, b: b };
+			return { a, b };
 		} else {
 			return this.nextRound();
 		}
