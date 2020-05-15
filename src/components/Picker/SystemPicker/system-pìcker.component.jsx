@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, FormControlLabel, Grid, Paper, Switch} from "@material-ui/core";
+import {Button, FormControlLabel, Grid, Paper, Switch, Tooltip} from "@material-ui/core";
 import {useTranslation} from "react-i18next";
 
 let backupSelected = "free4all";
@@ -33,10 +33,12 @@ const SystemPicker = ({setSystem}) => {
 			<Grid container spacing={1} >
 				<Grid item xs container justify={"center"} alignItems={"center"}>
 					{options.map((o) =>
-						<Button color="primary" variant={selected === o ? "contained" : "outlined"}
-								disabled onClick={handleSelect} name={o} key={o}>
-							{t(`option.${o}`)}
-						</Button>
+						<Tooltip title={t(`tooltip.${o}`)}>
+							<Button color="primary" variant={selected === o ? "contained" : "outlined"}
+									disabled onClick={handleSelect} name={o} key={o}>
+								{t(`option.${o}`)}
+							</Button>
+						</Tooltip>
 					)}
 				</Grid>
 				<Grid item xs container justify={"center"}>

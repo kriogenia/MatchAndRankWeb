@@ -12,7 +12,7 @@ const ToggleButton = ({children, onClick, tooltip}) => {
 				{children}
 			</Button>
 		</Tooltip>
-	)
+	);
 
 };
 
