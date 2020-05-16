@@ -14,7 +14,6 @@
     "react-dom": "^16.13.1",
     "react-i18next": "^11.4.0",
     "react-scripts": "3.4.1",
-    "react-spinners": "^0.8.3",
     "react-toastify": "^6.0.2",
     "typeface-roboto": "0.0.75"
   },
