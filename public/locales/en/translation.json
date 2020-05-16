@@ -1,3 +1,25 @@
 {
-  "welcome": "Welcome to Match'n'Rank"
+  "alert": {
+    "confirm": "Are you sure?",
+    "expected_matches": "Expected matches",
+    "min_entries": "You need a minimum of three entries to start"
+  },
+  "option": {
+    "add": "Add",
+    "draw": "Allow draws (TBI)",
+    "clear": "Clear",
+    "quick": "Quick (TBI)",
+    "free4all": "Free4All",
+    "import": "Import",
+    "no": "no",
+    "start": "Start",
+    "templates": "Templates",
+    "yes": "Yes"
+  },
+  "tooltip": {
+    "clear": "Clears the whole list",
+    "import": "This feature is not yet implemented",
+    "light_mode": "Toggle dark/light mode",
+    "templates": "This feature is not yet implemented"
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom";
-import {Container} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
+import {ToolBar} from "../../components";
 
 /**
  * Builds a Route decorating the component with the NavBar and footer
@@ -8,17 +9,17 @@ import {Container} from "@material-ui/core";
  */
 const PublicLayout = (props) => {
 
-	const { component: Component, ...rest } = props;
+	const { component: Component, toggleLightMode, ...rest } = props;
 
 	return (
 		<Route
 			{...rest}
 			component={({ history, location, match }) => (
-				<Container>
-					{/*<AppBar/>*/}
+				<Grid container direction="column">
+					<ToolBar toggleLightMode={toggleLightMode}/>
 					<Component {...{ history, location, match }} />
 					{/*<Footer/>*/}
-				</Container>
+				</Grid>
 			)}
 		/>
 	);
