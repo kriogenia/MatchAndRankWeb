@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/MatchAndRankWeb/static/js/main.f2679a07.chunk.js",
+    "main.js.map": "/MatchAndRankWeb/static/js/main.f2679a07.chunk.js.map",
+    "runtime-main.js": "/MatchAndRankWeb/static/js/runtime-main.cd1ec7e1.js",
+    "runtime-main.js.map": "/MatchAndRankWeb/static/js/runtime-main.cd1ec7e1.js.map",
+    "static/css/2.7e2c6223.chunk.css": "/MatchAndRankWeb/static/css/2.7e2c6223.chunk.css",
+    "static/js/2.301ec9eb.chunk.js": "/MatchAndRankWeb/static/js/2.301ec9eb.chunk.js",
+    "static/js/2.301ec9eb.chunk.js.map": "/MatchAndRankWeb/static/js/2.301ec9eb.chunk.js.map",
+    "index.html": "/MatchAndRankWeb/index.html",
+    "precache-manifest.5a25549f29bf5e675f500e86db6c4e91.js": "/MatchAndRankWeb/precache-manifest.5a25549f29bf5e675f500e86db6c4e91.js",
+    "service-worker.js": "/MatchAndRankWeb/service-worker.js",
+    "static/css/2.7e2c6223.chunk.css.map": "/MatchAndRankWeb/static/css/2.7e2c6223.chunk.css.map",
+    "static/js/2.301ec9eb.chunk.js.LICENSE.txt": "/MatchAndRankWeb/static/js/2.301ec9eb.chunk.js.LICENSE.txt",
+    "static/media/getFetch.cjs": "/MatchAndRankWeb/static/media/getFetch.5e98861f.cjs",
+    "static/media/index.css": "/MatchAndRankWeb/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd1ec7e1.js",
+    "static/css/2.7e2c6223.chunk.css",
+    "static/js/2.301ec9eb.chunk.js",
+    "static/js/main.f2679a07.chunk.js"
+  ]
+}
