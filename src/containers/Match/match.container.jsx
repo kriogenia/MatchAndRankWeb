@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Grid} from "@material-ui/core";
-import {MatchPicker} from "../../components";
+import {MatchCounter, MatchPicker} from "../../components";
 
 const MatchContainer = ({location}) => {
 
@@ -29,9 +29,10 @@ const MatchContainer = ({location}) => {
 		<Grid item container direction={"row"}>
 			<Grid item md={12} lg={4}/>
 			<Grid item xs={12} lg={4}>
-				{/* Counter */}
+				<MatchCounter counter={counter} finished={finished}/>
 				{currentMatch && <MatchPicker match={currentMatch} vote={vote} finished={finished}/>}
 				{/* Progress */}
+				{/* Results */}
 			</Grid>
 			<Grid item md={12} lg={4}/>
 		</Grid>

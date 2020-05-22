@@ -16,6 +16,10 @@
     "templates": "Templates",
     "yes": "Yes"
   },
+  "title": {
+    "matches_completed": "All matches completed",
+    "match_counter": "Match #"
+  },
   "tooltip": {
     "clear": "Clears the whole list",
     "import": "This feature is not yet implemented",
