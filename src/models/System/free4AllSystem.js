@@ -8,8 +8,8 @@ export default class Free4AllSystem {
 	}
 
 	nextRound() {
-		this.candidates = [...this.entries];
-		if (this.candidates) {
+		this.candidates = [...this.entries].filter((e) => e.clashed.length < this.entries.length - 1);
+		if (this.candidates.length > 1) {
 			return this.nextMatch();
 		} else {
 			return null;
@@ -17,14 +17,16 @@ export default class Free4AllSystem {
 	}
 
 	nextMatch() {
-		if (this.candidates) {
-			let a = this.candidates.pop();
-			let index = a.findOpponent(this.candidates);
-			let b = this.candidates[index];
+		if (this.candidates.length > 1) {
+			this.a = this.candidates.pop();
+			console.log(this.a);
+			let index = this.a.findOpponent(this.candidates);
+			this.b = this.candidates[index];
+			console.log(this.b);
 			this.candidates.splice(index, 1);
-			a.clashed.push(b.name);
-			b.clashed.push(a.name);
-			return { a, b };
+			this.a.clashed.push(this.b.name);
+			this.b.clashed.push(this.a.name);
+			return { a: this.a, b: this.b };
 		} else {
 			return this.nextRound();
 		}
@@ -33,6 +35,14 @@ export default class Free4AllSystem {
 	getExpectedMatches() {
 		let i = 0;
 		return this.entries.map(() => i++).reduce((total, n) => total + n, 0);
+	}
+
+	voteLeft() {
+		this.a.points++;
+	}
+
+	voteRight() {
+		this.b.points++;
 	}
 
 }

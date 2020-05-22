@@ -4,7 +4,7 @@ import {
 	Switch
 } from "react-router-dom";
 import { PublicLayout } from "./layouts";
-import { Start } from "./containers";
+import { Match, Start } from "./containers";
 
 /**
  * Manages the HashRouter and so, all the route navigation
@@ -15,7 +15,8 @@ const Routes = (props) => {
 		<Router>
 			<Fragment>
 				<Switch>
-					<PublicLayout {...props} component={Start} path={"/"} exact/>
+					<PublicLayout {...props} component={Start} path={"/"} 		exact/>
+					<PublicLayout {...props} component={Match} path={"/match"} 	exact/>
 					{/*<PublicLayout component={404} 		path="*"/>  */}
 				</Switch>
 			</Fragment>
