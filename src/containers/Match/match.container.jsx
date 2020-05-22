@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {Grid} from "@material-ui/core";
-import {MatchCounter, MatchPicker} from "../../components";
+import {MatchCounter, MatchPicker, ProgressBar} from "../../components";
 
 const MatchContainer = ({location}) => {
 
 	const [counter, setCounter] = useState(1);
+	const [expected, setExpected] = useState(1);
 	const [currentMatch, setCurrentMatch] = useState();
 	const [finished, setFinished] = useState(false);
 
@@ -17,6 +18,7 @@ const MatchContainer = ({location}) => {
 			setFinished(true);
 		} else {
 			setCurrentMatch(match);
+			setExpected(match.expected)
 		}
 	}, [counter, system]);
 
@@ -31,7 +33,7 @@ const MatchContainer = ({location}) => {
 			<Grid item xs={12} lg={4}>
 				<MatchCounter counter={counter} finished={finished}/>
 				{currentMatch && <MatchPicker match={currentMatch} vote={vote} finished={finished}/>}
-				{/* Progress */}
+				<ProgressBar counter={counter} expected={expected}/>
 				{/* Results */}
 			</Grid>
 			<Grid item md={12} lg={4}/>

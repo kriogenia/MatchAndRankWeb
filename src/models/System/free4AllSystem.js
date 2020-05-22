@@ -21,12 +21,13 @@ export default class Free4AllSystem {
 			this.a = this.candidates.pop();
 			console.log(this.a);
 			let index = this.a.findOpponent(this.candidates);
+			if (index === -1) { return this.nextMatch(); }			// This candidate doesnt have available opponents
 			this.b = this.candidates[index];
 			console.log(this.b);
 			this.candidates.splice(index, 1);
 			this.a.clashed.push(this.b.name);
 			this.b.clashed.push(this.a.name);
-			return { a: this.a, b: this.b };
+			return { a: this.a, b: this.b, expected: this.getExpectedMatches()};
 		} else {
 			return this.nextRound();
 		}
