@@ -50,12 +50,12 @@ export default class Free4AllSystem {
 
 	getResults() {
 		let results = [];
-		let sorted = this.entries.sort((a,b) => a.points - b.points);
-		console.log(sorted);
+		let sorted = this.entries.sort((a,b) => b.points - a.points);
 		while (sorted.length > 0) {
-			let step = sorted.filter((x) => x.points === sorted[0].points);
+			let points = sorted[0].points;
+			let step = sorted.filter((x) => x.points === points);
+			sorted = sorted.filter((x) => x.points !== points);
 			results = [...results, ...this.decideDraw(step)];
-			console.log(results);
 		}
 		return results;
 	}
@@ -63,7 +63,7 @@ export default class Free4AllSystem {
 	decideDraw(step) {
 		if (step.length === 1) { return step }
 		let map = new Map(step.map((e) => [e.name, e.getWins(step)]));
-		return step.sort((x,y) => map[x.name] - map[y.name]);
+		return step.sort((x,y) => map[y.name] - map[x.name]);
 	}
 
 }
