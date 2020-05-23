@@ -14,10 +14,12 @@ import {AddRounded, Delete} from "@material-ui/icons";
 import { useTheme } from "@material-ui/core/styles";
 import {useStyles} from "./entries-list.style";
 import {useTranslation} from "react-i18next";
+import {WarningDialog} from "../../index";
 
 const EntriesList = ({ list, setList }) => {
 
 	const [input, setInput] = React.useState("");
+	const [alertOpen, setAlertOpen] = React.useState(false);
 
 	const {t} = useTranslation();
 	const mobile = useMediaQuery(useTheme().breakpoints.up("sm"));
@@ -28,9 +30,13 @@ const EntriesList = ({ list, setList }) => {
 	const handleAdd = (e) => {
 		e.preventDefault();
 		if (input) {
-			let entry = input;
-			setInput("");
-			setList([...list, {id: Date.now(), entry}]);
+			if (list.map((e) => e.entry).includes(input)) {
+				setAlertOpen(true)
+			} else {
+				let entry = input;
+				setInput("");
+				setList([...list, {id: Date.now(), entry}]);
+			}
 		}
 	};
 
@@ -40,6 +46,9 @@ const EntriesList = ({ list, setList }) => {
 
 	return (
 		<Paper className={classes.paper}>
+			<WarningDialog open={alertOpen} onClose={() => setAlertOpen(false)}>
+				{t("alert.repeated_entry")}
+			</WarningDialog>
 			<form onSubmit={handleAdd} className={classes.form}>
 				<TextField name="input" label="Add" value={input} onChange={handleChange} margin="normal"
 					className={classes.textfield}/>

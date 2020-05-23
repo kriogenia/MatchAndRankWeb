@@ -2,10 +2,13 @@
   "alert": {
     "confirm": "Are you sure?",
     "expected_matches": "Expected matches",
-    "min_entries": "You need a minimum of three entries to start"
+    "min_entries": "You need a minimum of three entries to start",
+    "repeated_entry": "This entry is already added",
+    "warning": "Warning"
   },
   "option": {
     "add": "Add",
+    "close": "Close",
     "draw": "Allow draws (TBI)",
     "clear": "Clear",
     "quick": "Quick (TBI)",
