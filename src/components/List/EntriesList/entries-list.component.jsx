@@ -15,7 +15,7 @@ import { useTheme } from "@material-ui/core/styles";
 import {useStyles} from "./entries-list.style";
 import {useTranslation} from "react-i18next";
 
-const EntriesListComponent = ({ list, setList }) => {
+const EntriesList = ({ list, setList }) => {
 
 	const [input, setInput] = React.useState("");
 
@@ -65,4 +65,4 @@ const EntriesListComponent = ({ list, setList }) => {
 
 };
 
-export default EntriesListComponent;
+export default EntriesList;
