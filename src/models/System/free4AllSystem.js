@@ -40,10 +40,30 @@ export default class Free4AllSystem {
 
 	voteLeft() {
 		this.a.points++;
+		this.a.won.push(this.b.name);
 	}
 
 	voteRight() {
 		this.b.points++;
+		this.b.won.push(this.a.name);
+	}
+
+	getResults() {
+		let results = [];
+		let sorted = this.entries.sort((a,b) => a.points - b.points);
+		console.log(sorted);
+		while (sorted.length > 0) {
+			let step = sorted.filter((x) => x.points === sorted[0].points);
+			results = [...results, ...this.decideDraw(step)];
+			console.log(results);
+		}
+		return results;
+	}
+
+	decideDraw(step) {
+		if (step.length === 1) { return step }
+		let map = new Map(step.map((e) => [e.name, e.getWins(step)]));
+		return step.sort((x,y) => map[x.name] - map[y.name]);
 	}
 
 }

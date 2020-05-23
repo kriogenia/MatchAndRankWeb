@@ -4,6 +4,7 @@ export default class Entry {
 		this.name = name;
 		this.points = 0;
 		this.clashed = [];
+		this.won = [];
 	}
 
 	findOpponent(list) {
@@ -13,6 +14,10 @@ export default class Entry {
 			}
 		}
 		return -1;
+	}
+
+	getWins(list) {
+		return list.reduce((x,y) => this.won.includes(y.name) ? x+1 : x, 0);
 	}
 
 }
