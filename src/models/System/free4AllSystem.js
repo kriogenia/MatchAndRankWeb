@@ -19,11 +19,9 @@ export default class Free4AllSystem {
 	nextMatch() {
 		if (this.candidates.length > 1) {
 			this.a = this.candidates.pop();
-			console.log(this.a);
 			let index = this.a.findOpponent(this.candidates);
 			if (index === -1) { return this.nextMatch(); }			// This candidate doesnt have available opponents
 			this.b = this.candidates[index];
-			console.log(this.b);
 			this.candidates.splice(index, 1);
 			this.a.clashed.push(this.b.name);
 			this.b.clashed.push(this.a.name);
@@ -61,7 +59,7 @@ export default class Free4AllSystem {
 	}
 
 	decideDraw(step) {
-		if (step.length === 1) { return step }
+		if (step.length === 1) { return step; }
 		let map = new Map(step.map((e) => [e.name, e.getWins(step)]));
 		return step.sort((x,y) => map[y.name] - map[x.name]);
 	}

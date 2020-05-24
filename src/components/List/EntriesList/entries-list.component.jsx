@@ -31,7 +31,7 @@ const EntriesList = ({ list, setList }) => {
 		e.preventDefault();
 		if (input) {
 			if (list.map((e) => e.entry).includes(input)) {
-				setAlertOpen(true)
+				setAlertOpen(true);
 			} else {
 				let entry = input;
 				setInput("");

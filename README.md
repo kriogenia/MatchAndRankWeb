@@ -10,16 +10,16 @@ The list doesn't have a maximum limit right now, but could be added in the futur
 The following enhancement are a prioritized list of things I want to add to the application.
 
 These are expected to come before the 1.0:
-- Quick system (featuring fewer matches at the cost of less variety)
-- API to save and load lists
-- Import list from file
-- Share lists (complete and templates)
+  - Quick system (featuring fewer matches at the cost of less variety)
+  - API to save and load lists
+  - Import list from file
+  - Share lists (complete and templates)
 
 Future enhancements
-- Allowing draws on matches
-- Keyboard control
-- Mobile application
-- Tier decoration
+  - Allowing draws on matches
+  - Keyboard control
+  - Mobile application
+  - Tier decoration
 
 ## Technologies
 

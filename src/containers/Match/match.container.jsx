@@ -18,14 +18,14 @@ const MatchContainer = ({location}) => {
 			setFinished(true);
 		} else {
 			setCurrentMatch(match);
-			setExpected(match.expected)
+			setExpected(match.expected);
 		}
 	}, [counter, system]);
 
 	const vote = (id) => {
 		id === "a" ? system.voteLeft() : system.voteRight();
 		setCounter(counter+1);
-	}
+	};
 
 	return (
 		<Grid item container direction={"row"}>

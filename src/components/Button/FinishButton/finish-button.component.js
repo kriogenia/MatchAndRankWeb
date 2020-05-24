@@ -12,10 +12,9 @@ const FinishButton = ({system}) => {
 	const classes = useStyles();
 
 	useEffect(() => {
-		let results = system.getResults().map((e) => { return {name: e.name, points: e.points} });
-		console.log(results);
+		let results = system.getResults().map((e) => { return {name: e.name, points: e.points}; });
 		setResults(results);
-	}, [system])
+	}, [system]);
 
 	return(
 		<Link className={classes.link} to={ { pathname: "/results", results: results } }>
