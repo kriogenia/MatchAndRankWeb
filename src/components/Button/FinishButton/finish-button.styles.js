@@ -4,11 +4,8 @@ export const useStyles = makeStyles(() => ({
 	link: {
 		textDecoration: "none"
 	},
-	startButton: {
+	finishButton: {
 		width: "100%",
 		margin: "10px 0"
-	},
-	subtitle: {
-		textTransform: "initial"
 	}
 }));

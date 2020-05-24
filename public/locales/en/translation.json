@@ -2,19 +2,27 @@
   "alert": {
     "confirm": "Are you sure?",
     "expected_matches": "Expected matches",
-    "min_entries": "You need a minimum of three entries to start"
+    "min_entries": "You need a minimum of three entries to start",
+    "repeated_entry": "This entry is already added",
+    "warning": "Warning"
   },
   "option": {
     "add": "Add",
+    "close": "Close",
     "draw": "Allow draws (TBI)",
     "clear": "Clear",
     "quick": "Quick (TBI)",
+    "finish": "Finish",
     "free4all": "Free4All",
     "import": "Import",
     "no": "no",
     "start": "Start",
     "templates": "Templates",
     "yes": "Yes"
+  },
+  "title": {
+    "matches_completed": "All matches completed",
+    "match_counter": "Match #"
   },
   "tooltip": {
     "clear": "Clears the whole list",
