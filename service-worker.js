@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MatchAndRankWeb/precache-manifest.5a25549f29bf5e675f500e86db6c4e91.js"
+  "/MatchAndRankWeb/precache-manifest.e456f22d5d4f1b726d95d2bba692ad6b.js"
 );
 
 self.addEventListener('message', (event) => {

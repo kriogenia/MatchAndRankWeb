@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01217d5eb98662ecb1e9e509843a40be",
+    "revision": "c54e8854e6676700bd004621d08f96aa",
     "url": "/MatchAndRankWeb/index.html"
   },
   {
-    "revision": "a4aee2dd933e82e88c1c",
+    "revision": "7be25102003043bb94c3",
     "url": "/MatchAndRankWeb/static/css/2.7e2c6223.chunk.css"
   },
   {
-    "revision": "a4aee2dd933e82e88c1c",
-    "url": "/MatchAndRankWeb/static/js/2.301ec9eb.chunk.js"
+    "revision": "7be25102003043bb94c3",
+    "url": "/MatchAndRankWeb/static/js/2.4a87e73c.chunk.js"
   },
   {
     "revision": "d09ac505fec0e9130a1d5b85fb3fa6dc",
-    "url": "/MatchAndRankWeb/static/js/2.301ec9eb.chunk.js.LICENSE.txt"
+    "url": "/MatchAndRankWeb/static/js/2.4a87e73c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82f2ac1a3dc5077ebd50",
-    "url": "/MatchAndRankWeb/static/js/main.f2679a07.chunk.js"
+    "revision": "38c66244134f8b42362a",
+    "url": "/MatchAndRankWeb/static/js/main.6b1f2632.chunk.js"
   },
   {
     "revision": "d9752bf156247b4e0912",
