@@ -1,3 +1,33 @@
 {
-  "welcome": "Bienvenido a Match'n'Rank"
+  "alert": {
+    "confirm": "¿Seguro?",
+    "expected_matches": "Enfrentamientos previstos",
+    "min_entries": "Necesitas al menos tres candidatos para comenzar",
+    "repeated_entry": "Este candidato ya ha sido añadido",
+    "warning": "Advertencia"
+  },
+  "option": {
+    "add": "Añadir",
+    "close": "Cerrar",
+    "draw": "Permitir empates (TBI)",
+    "clear": "Limpiar",
+    "quick": "Rápido (TBI)",
+    "finish": "Finalizar",
+    "free4all": "TcT",
+    "import": "Importar",
+    "no": "No",
+    "start": "Comenzar",
+    "templates": "Plantillas",
+    "yes": "Sí"
+  },
+  "title": {
+    "matches_completed": "Todos los enfrentamientos resueltos",
+    "match_counter": "Enfrentamiento #"
+  },
+  "tooltip": {
+    "clear": "Limpia la lista completa",
+    "import": "Esta opción aún no ha sido implementada",
+    "light_mode": "Cambiar modo oscuro/diurno",
+    "templates": "Esta opción aún no ha sido implementada"
+  }
 }

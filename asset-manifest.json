@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/MatchAndRankWeb/static/js/main.6b1f2632.chunk.js",
-    "main.js.map": "/MatchAndRankWeb/static/js/main.6b1f2632.chunk.js.map",
+    "main.js": "/MatchAndRankWeb/static/js/main.732de1a8.chunk.js",
+    "main.js.map": "/MatchAndRankWeb/static/js/main.732de1a8.chunk.js.map",
     "runtime-main.js": "/MatchAndRankWeb/static/js/runtime-main.cd1ec7e1.js",
     "runtime-main.js.map": "/MatchAndRankWeb/static/js/runtime-main.cd1ec7e1.js.map",
     "static/css/2.7e2c6223.chunk.css": "/MatchAndRankWeb/static/css/2.7e2c6223.chunk.css",
     "static/js/2.4a87e73c.chunk.js": "/MatchAndRankWeb/static/js/2.4a87e73c.chunk.js",
     "static/js/2.4a87e73c.chunk.js.map": "/MatchAndRankWeb/static/js/2.4a87e73c.chunk.js.map",
     "index.html": "/MatchAndRankWeb/index.html",
-    "precache-manifest.e456f22d5d4f1b726d95d2bba692ad6b.js": "/MatchAndRankWeb/precache-manifest.e456f22d5d4f1b726d95d2bba692ad6b.js",
+    "precache-manifest.9aed90fc47faadd88b9e3936198037fb.js": "/MatchAndRankWeb/precache-manifest.9aed90fc47faadd88b9e3936198037fb.js",
     "service-worker.js": "/MatchAndRankWeb/service-worker.js",
     "static/css/2.7e2c6223.chunk.css.map": "/MatchAndRankWeb/static/css/2.7e2c6223.chunk.css.map",
     "static/js/2.4a87e73c.chunk.js.LICENSE.txt": "/MatchAndRankWeb/static/js/2.4a87e73c.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.cd1ec7e1.js",
     "static/css/2.7e2c6223.chunk.css",
     "static/js/2.4a87e73c.chunk.js",
-    "static/js/main.6b1f2632.chunk.js"
+    "static/js/main.732de1a8.chunk.js"
   ]
 }
