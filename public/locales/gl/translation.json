@@ -1,2 +1,33 @@
 {
+  "alert": {
+    "confirm": "Seguro?",
+    "expected_matches": "Enfrentamentos previstos",
+    "min_entries": "Necesitas polo menos tres candidatos para comezar",
+    "repeated_entry": "Este candidato xa foi engadido",
+    "warning": "Advertencia"
+  },
+  "option": {
+    "add": "Engadir",
+    "close": "Pechar",
+    "draw": "Permitir empates (TBI)",
+    "clear": "Limpar",
+    "quick": "Rápido (TBI)",
+    "finish": "Finalizar",
+    "free4all": "TcT",
+    "import": "Importar",
+    "no": "Non",
+    "start": "Comezar",
+    "templates": "Modelos",
+    "yes": "Sí"
+  },
+  "title": {
+    "matches_completed": "Tódolos enfrentamentos resoltos",
+    "match_counter": "Enfrentamento #"
+  },
+  "tooltip": {
+    "clear": "Limpa a lista completa",
+    "import": "Esta opción aínda non foi implementada",
+    "light_mode": "Cambiar modo oscuro/diurno",
+    "templates": "Esta opción aínda non foi implementada"
+  }
 }

@@ -20,7 +20,7 @@ const ResultsList = ({ results }) => {
 					<ListItem key={name}>
 						<ListItemText primary={`${++counter}. ${name}`} className={classes.entry}
 							primaryTypographyProps={{
-								color: counter % 2 === 0 ? "secondary" : "primary",
+								color: "secondary",
 								variant: "h6"
 							}}/>
 					</ListItem>
